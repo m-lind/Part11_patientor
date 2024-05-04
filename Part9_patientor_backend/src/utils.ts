@@ -23,7 +23,7 @@ const isDate = (date: string): boolean => {
 
 const parseDate = (date: unknown): string => {
   if (!isString(date) || !isDate(date)) {
-    throw new Error("Incorrect date: " + date);
+    throw new Error("Incorrect date");
   }
   return date;
 };
@@ -36,7 +36,7 @@ const isGender = (param: string): param is Gender => {
 
 const parseGender = (gender: unknown): Gender => {
   if (!gender || !isString(gender) || !isGender(gender)) {
-    throw new Error("Incorrect or missing gender" + gender);
+    throw new Error("Incorrect or missing gender");
   }
   return gender;
 };

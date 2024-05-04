@@ -1,0 +1,23 @@
+{
+    "name": "patientor",
+    "version": "1.0.0",
+    "type": "module",
+    "scripts": {
+        "build": "npm run build:frontend && npm run build:backend",
+        "build:frontend": "cd Part9_patientor_frontend && npm install && npm run build",
+        "build:backend": "cd Part9_patientor_backend && npm install && npm run build",
+        "start": "node server/build/index.js",
+        "lint:backend": "eslint Part9_patientor_backend --ext .ts, --report-unused-disable-directives --max-warnings 0",
+        "lint:frontend": "eslint Part9_patientor_frontend --ext .ts,.tsx --report-unused-disable-directives --max-warnings 0",
+        "lint": "npm run lint:backend && npm run lint:frontend"
+    },
+    "dependencies": {
+        "express": "^4.17.1"
+    },
+    "devDependencies": {
+        "@types/jest": "^29.5.12",
+        "eslint": "^8.45.0",
+        "@typescript-eslint/eslint-plugin": "^6.0.0",
+        "@typescript-eslint/parser": "^6.0.0"
+    }
+}

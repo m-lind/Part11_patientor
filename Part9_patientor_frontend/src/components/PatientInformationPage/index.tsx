@@ -1,3 +1,4 @@
+import React from 'react';
 import { Patient, Gender, Diagnosis, NewEntry, Entry } from "./../../types";
 import { useMatch } from "react-router-dom";
 import FemaleIcon from "@mui/icons-material/Female";
