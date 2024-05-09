@@ -3,13 +3,17 @@
     "version": "1.0.0",
     "type": "module",
     "scripts": {
+        "install": "npm run install:frontend && npm run install:backend",
+        "install:frontend": "cd Part9_patientor_frontend && npm install",
+        "install:backend": "cd Part9_patientor_backend && npm install",
         "build": "npm run build:frontend && npm run build:backend",
-        "build:frontend": "cd Part9_patientor_frontend && npm install && npm run build",
-        "build:backend": "cd Part9_patientor_backend && npm install && npm run build",
+        "build:frontend": "cd Part9_patientor_frontend && npm run build",
+        "build:backend": "cd Part9_patientor_backend && npm run build",
         "start": "node Part9_patientor_backend/build/src/index.js",
         "lint:backend": "eslint Part9_patientor_backend --ext .ts, --report-unused-disable-directives --max-warnings 0",
         "lint:frontend": "eslint Part9_patientor_frontend --ext .ts,.tsx --report-unused-disable-directives --max-warnings 0",
-        "lint": "npm run lint:backend && npm run lint:frontend"
+        "lint": "npm run lint:backend && npm run lint:frontend",
+        "test": "cd Part9_patientor_frontend && npm test"
     },
     "dependencies": {
         "express": "^4.17.1"
