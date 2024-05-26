@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "install": "npm run install:frontend && npm run install:backend",
+    "install": "npm run install && npm run install:frontend && npm run install:backend",
     "install:frontend": "cd Part9_patientor_frontend && npm install",
     "install:backend": "cd Part9_patientor_backend && npm install",
     "build": "npm run build:frontend && npm run build:backend",
