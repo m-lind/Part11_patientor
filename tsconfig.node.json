@@ -7,5 +7,5 @@
     "allowSyntheticDefaultImports": true,
     "allowJs": true,
   },
-  "include": ["Part9_patientor_backend/src/**/*.ts", "Part9_patientor_backend/src/**/*.tsx", "Part9_patientor_backend/src/routes/**/*.ts", "Part9_patientor_backend/data/*"]
+  "include": ["Part9_patientor_backend/src/**/*.ts", "Part9_patientor_backend/src/**/*.tsx", "Part9_patientor_backend/src/routes/**/*.ts", "Part9_patientor_backend/data/*", "e2e-tests/**/*.ts", "tests/*.ts", "*.ts"]
 }
