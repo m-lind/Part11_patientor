@@ -1,4 +1,3 @@
-import React from 'react';
 import { useState, SyntheticEvent } from "react";
 import { NewEntry, HealthCheckRating, Diagnosis } from "../../types";
 import {

@@ -1,4 +1,3 @@
-import React from 'react';
 import { HealthCheckRating } from "../../types";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 
