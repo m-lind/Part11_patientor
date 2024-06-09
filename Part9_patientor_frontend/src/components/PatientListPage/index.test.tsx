@@ -1,4 +1,3 @@
-import React from 'react';
 import { render, screen } from '@testing-library/react';
 import PatientListPage from './index';
 import {Patient, Gender} from "./../../types";

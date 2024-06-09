@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc",
     "tsc": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "ts-node-dev src/index.ts",
     "dev": "ts-node-dev src/index.ts",
     "lint": "eslint --ext .ts .",
     "start": "node build/src/index.js"
@@ -26,5 +26,8 @@
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "uuid": "^9.0.1"
+  },
+  "optionalDependencies": {
+    "@rollup/rollup-linux-x64-gnu": "4.9.5"
   }
 }

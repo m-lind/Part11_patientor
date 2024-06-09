@@ -1,4 +1,3 @@
-import React from 'react';
 import { useState, SyntheticEvent } from "react";
 import {
   TextField,
@@ -64,12 +63,14 @@ const AddPatientForm = ({ onCancel, onSubmit }: Props) => {
           fullWidth
           value={name}
           onChange={({ target }) => setName(target.value)}
+          inputProps={{ "data-testid": "name" }}
         />
         <TextField
           label="Social security number"
           fullWidth
           value={ssn}
           onChange={({ target }) => setSsn(target.value)}
+          inputProps={{ "data-testid": "ssn" }}
         />
         <TextField
           label="Date of birth"
@@ -77,12 +78,14 @@ const AddPatientForm = ({ onCancel, onSubmit }: Props) => {
           fullWidth
           value={dateOfBirth}
           onChange={({ target }) => setDateOfBirth(target.value)}
+          inputProps={{ "data-testid": "date-of-birth" }}
         />
         <TextField
           label="Occupation"
           fullWidth
           value={occupation}
           onChange={({ target }) => setOccupation(target.value)}
+          inputProps={{ "data-testid": "occupation" }}
         />
 
         <InputLabel style={{ marginTop: 20 }}>Gender</InputLabel>
